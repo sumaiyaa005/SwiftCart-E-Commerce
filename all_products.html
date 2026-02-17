@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SwiftCart E-Commerce</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+  <!-- style -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+  <header>
+    <!-- navbar start -->
+    <div class="navbar bg-base-100  px-10 max-w-7xl mx-auto">
+
+      <!-- Logo -->
+      <div class="navbar-start">
+        <a class="text-2xl font-bold text-[#4f39f6]">SwiftCart</a>
+      </div>
+
+      <!-- menu -->
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1 gap-6 font-medium">
+          <li><a href="index.html" class="hover:text-[#4f39f6] transition-colors bg-transparent">Home</a></li>
+          <li><a href="all_products.html" class="text-[#4f39f6] font-medium">Products</a></li>
+          <li><a href="#" class="hover:text-[#4f39f6] transition-colors bg-transparent">About</a></li>
+          <li><a href="#" class="hover:text-[#4f39f6] transition-colors bg-transparent">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Right Icons -->
+      <div class="navbar-end flex items-center gap-2 relative">
+
+        <!-- Cart -->
+        <a class="btn btn-ghost text-xl">
+          <i class="fa-solid fa-cart-shopping"></i>
+        </a>
+
+        <!-- Hamburger -->
+        <div class="dropdown dropdown-end lg:hidden">
+          <label tabindex="0" class="btn btn-ghost">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
+          </label>
+
+          <!-- Dropdown menu -->
+          <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+            <li><a href="#" class="active:text-red-700 hover:text-[#4f39f6]transition-colors">Home</a></li>
+            <li><a href="#" class="hover:text-[#4f39f6]transition-colors">Products</a></li>
+            <li><a href="#" class="hover:text-[#4f39f6]transition-colors">About</a></li>
+            <li><a href="#" class="hover:text-[#4f39f6]transition-colors">Contact</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+    <!-- navbar end -->
+
+
+  </header>
+
+  <!-- our product -->
+  <section class="bg-white py-16">
+    <div class="max-w-7xl mx-auto px-10">
+
+      <div class="text-center mb-6">
+        <h2 class="text-3xl md:text-4xl font-bold text-[#101828]">Our Products</h2>
+      </div>
+
+      <!-- catagory tab -->
+      <div id="catagory-container" class="flex gap-5 flex-wrap justify-center mb-5">
+      </div>
+      <!-- catagory tab end-->
+
+      <!-- product card row -->
+      <div id="products-container" class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <!-- product Card-->
+      </div>
+      <!-- product card row end -->
+
+      <!-- Modal for Product Details -->
+      <dialog id="product_modal" class="modal">
+        <div class="modal-box max-w-2xl">
+          <div id="modal-content"></div>
+          <div class="modal-action">
+            <form method="dialog">
+              <button class="btn w-full">Close</button>
+            </form>
+          </div>
+        </div>
+      </dialog>
+      <!-- end Modal for Product Details -->
+    </div>
+  </section>
+
+  <!-- footer section -->
+  <footer class="bg-[#1e2939] text-gray-300">
+    <div class="max-w-7xl mx-auto py-16 px-6 ">
+
+      <!-- Top Section -->
+      <div class="flex flex-col lg:flex-row lg:justify-between gap-12 pb-5 border-b border-[#364153]">
+
+        <!-- Brand & Description -->
+        <div class="lg:w-1/4">
+          <h2 class="text-2xl font-bold text-[#4f39f6] mb-4">SwiftCart</h2>
+          <p class="text-gray-400 text-sm">
+            Your one-stop shop for all your fashion and lifestyle needs.
+            Quality products, fast delivery, and excellent support.
+          </p>
+        </div>
+
+        <!-- Links Section -->
+        <div class="flex flex-col sm:flex-row lg:gap-16 gap-8">
+
+          <!-- Quick Links -->
+          <div>
+            <h3 class="text-sm font-semibold text-gray-400 uppercase mb-4">Quick Links</h3>
+            <ul class="space-y-3">
+              <li><a href="#" class="text-sm hover:text-white transition">Home</a></li>
+              <li><a href="#" class="text-sm hover:text-white transition">Products</a></li>
+              <li><a href="#" class="text-sm hover:text-white transition">About</a></li>
+              <li><a href="#" class="text-sm hover:text-white transition">Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- Support Links -->
+          <div>
+            <h3 class="text-sm font-semibold text-gray-400 uppercase mb-4">Support</h3>
+            <ul class="space-y-3">
+              <li><a href="#" class="text-sm hover:text-white transition">FAQ</a></li>
+              <li><a href="#" class="text-sm hover:text-white transition">Shipping</a></li>
+              <li><a href="#" class="text-sm hover:text-white transition">Returns</a></li>
+              <li><a href="#" class="text-sm hover:text-white transition">Privacy Policy</a></li>
+            </ul>
+          </div>
+
+        </div>
+
+        <!-- Newsletter -->
+        <div class="lg:w-1/4">
+          <h3 class="text-sm font-semibold text-gray-400 uppercase mb-4">Subscribe to our newsletter</h3>
+          <p class="text-sm text-gray-400 mb-4">
+            The latest news, articles, and resources, sent to your inbox weekly.
+          </p>
+
+          <form class="flex flex-col sm:flex-row gap-3">
+            <input type="email" placeholder="Enter your email"
+              class="input input-bordered w-full bg-white text-black" />
+            <button type="submit"
+              class="btn bg-[#4f39f6] text-white border-none hover:bg-indigo-700 shadow-none w-full sm:w-auto">
+              Subscribe
+            </button>
+          </form>
+        </div>
+
+      </div>
+
+
+      <!-- Bottom Section -->
+      <div class="flex flex-col md:flex-row items-center justify-between gap-6 mt-4">
+
+        <p class="text-gray-500 text-sm">© 2025 SwiftCart, Inc. All rights reserved.</p>
+
+        <div class="flex items-center gap-6 text-gray-400 text-lg">
+
+          <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="hover:text-white">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+
+          <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" class="hover:text-white">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="hover:text-white">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+
+          <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" class="hover:text-white">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+
+          <a href="mailto:example@example.com" target="_blank" rel="noopener noreferrer" class="hover:text-white">
+            <i class="fa-regular fa-envelope"></i>
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- script -->
+  <script src="assets/script/index.js"></script>
+</body>
+
+</html>

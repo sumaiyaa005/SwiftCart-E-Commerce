@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-commerce</title>
+    <title>SwiftCart E-Commerce</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- fontawesome -->
@@ -21,16 +21,17 @@
 
             <!-- Logo -->
             <div class="navbar-start">
-                <a class="text-2xl font-bold text-primary">SwiftCart</a>
+                <a class="text-2xl font-bold text-[#4f39f6]">SwiftCart</a>
             </div>
 
             <!-- menu -->
             <div class="navbar-center hidden lg:flex">
                 <ul class="menu menu-horizontal px-1 gap-6 font-medium">
-                    <li><a href="#" class="active:text-red-700 hover:text-[#4f39f6]transition-colors">Home</a></li>
-                    <li><a href="#" class="hover:text-[#4f39f6]transition-colors">Products</a></li>
-                    <li><a href="#" class="hover:text-[#4f39f6]transition-colors">About</a></li>
-                    <li><a href="#" class="hover:text-[#4f39f6]transition-colors">Contact</a></li>
+                    <li><a href="index.html" class="text-[#4f39f6] font-medium">Home</a></li>
+                    <li><a href="all_products.html"
+                            class="hover:text-[#4f39f6] transition-colors bg-transparent">Products</a></li>
+                    <li><a href="#" class="hover:text-[#4f39f6] transition-colors bg-transparent">About</a></li>
+                    <li><a href="#" class="hover:text-[#4f39f6] transition-colors bg-transparent">Contact</a></li>
                 </ul>
             </div>
 
@@ -63,8 +64,6 @@
 
             </div>
         </div>
-
-
         <!-- navbar end -->
 
         <!-- hero section start -->
@@ -93,7 +92,6 @@
                 </div>
             </div>
         </div>
-
         <!-- hero section end -->
 
     </header>
@@ -116,7 +114,7 @@
                 <!-- Card -->
                 <div class="card bg-base-100 transition hover:shadow-none">
                     <div class="card-body flex flex-col gap-4">
-                        <!-- Icon with square background and white border -->
+                        <!-- Icon-->
                         <div
                             class="w-12 h-12 flex items-center justify-center bg-[#eef2ff] border-2 border-white rounded-md shadow-md">
                             <i class="fa-regular fa-truck text-[#4f39f6] text-xl"></i>
@@ -173,151 +171,32 @@
     </section>
 
     <!-- trending product -->
-
     <section class="bg-white py-16">
         <div class="max-w-7xl mx-auto px-10">
-
-            <div class="">
+            <div class="mb-8">
                 <h2 class="text-3xl md:text-4xl font-bold text-[#101828]">Trending Now</h2>
             </div>
-
-            <!-- Responsive 3-Card Row -->
-            <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-
-                <!-- Card-->
-                <div
-                    class="card bg-base-100 shadow-lg rounded-xl overflow-hidden hover:shadow-xl transition duration-300  mt-12">
-                    <figure>
-                        <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                            alt="Shoes" />
-                    </figure>
-
-                    <div class="card-body  p-4">
-                        <!-- catagor+rating -->
-                        <div class="flex justify-between gap-1 text-sm text-gray-500">
-
-                            <div class="bg-indigo-100 text-indigo-600 px-3 py-1 text-xs rounded-full">
-                                Men's Clothing
-                            </div>
-
-                            <div class="justify-end">
-                                <i class="fa-solid fa-star text-yellow-400"></i>
-                                <span class="font-medium text-gray-700">4.1</span>
-                                <span>(259)</span>
-                            </div>
-
-                        </div>
-
-                        <h2 class="card-title text-lg font-semibold mt-3"> Mens Casual Premium Slim Fit T-Shirts</h2>
-                        <p class="text-2xl font-bold text-gray-900">$22.3</p>
-
-                        <div class="card-actions justify-between mt-4 gap-3">
-                            <!-- Details Button -->
-                            <button
-                                class="flex-1 btn h-10 flex items-center justify-center gap-2 rounded-xl text-gray-700 bg-white bottom-1">
-                                <i class="fa-solid fa-eye"></i> Details
-                            </button>
-
-                            <!-- Add Button -->
-                            <button
-                                class="flex-1 btn bg-[#4f39f6] text-white border-0 h-10 flex items-center justify-center gap-2 rounded-lg">
-                                <i class="fa-solid fa-cart-shopping"></i> Add
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <!-- Card-->
-                <div
-                    class="card bg-base-100 shadow-lg rounded-xl overflow-hidden hover:shadow-xl transition duration-300  mt-12">
-                    <figure>
-                        <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                            alt="Shoes" />
-                    </figure>
-
-                    <div class="card-body  p-4">
-                        <!-- catagor+rating -->
-                        <div class="flex justify-between gap-1 text-sm text-gray-500">
-
-                            <div class="bg-indigo-100 text-indigo-600 px-3 py-1 text-xs rounded-full">
-                                Men's Clothing
-                            </div>
-
-                            <div class="justify-end">
-                                <i class="fa-solid fa-star text-yellow-400"></i>
-                                <span class="font-medium text-gray-700">4.1</span>
-                                <span>(259)</span>
-                            </div>
-
-                        </div>
-
-                        <h2 class="card-title text-lg font-semibold mt-3"> Mens Casual Premium Slim Fit T-Shirts</h2>
-                        <p class="text-2xl font-bold text-gray-900">$22.3</p>
-
-                        <div class="card-actions justify-between mt-4 gap-3">
-                            <!-- Details Button -->
-                            <button
-                                class="flex-1 btn h-10 flex items-center justify-center gap-2 rounded-xl text-gray-700 bg-white bottom-1">
-                                <i class="fa-solid fa-eye"></i> Details
-                            </button>
-
-                            <!-- Add Button -->
-                            <button
-                                class="flex-1 btn bg-[#4f39f6] text-white border-0 h-10 flex items-center justify-center gap-2 rounded-lg">
-                                <i class="fa-solid fa-cart-shopping"></i> Add
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card-->
-                <div
-                    class="card bg-base-100 shadow-lg rounded-xl overflow-hidden hover:shadow-xl transition duration-300  mt-12">
-                    <figure>
-                        <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                            alt="Shoes" />
-                    </figure>
-
-                    <div class="card-body  p-4">
-                        <!-- catagor+rating -->
-                        <div class="flex justify-between gap-1 text-sm text-gray-500">
-
-                            <div class="bg-indigo-100 text-indigo-600 px-3 py-1 text-xs rounded-full">
-                                Men's Clothing
-                            </div>
-
-                            <div class="justify-end">
-                                <i class="fa-solid fa-star text-yellow-400"></i>
-                                <span class="font-medium text-gray-700">4.1</span>
-                                <span>(259)</span>
-                            </div>
-
-                        </div>
-
-                        <h2 class="card-title text-lg font-semibold mt-3"> Mens Casual Premium Slim Fit T-Shirts</h2>
-                        <p class="text-2xl font-bold text-gray-900">$22.3</p>
-
-                        <div class="card-actions justify-between mt-4 gap-3">
-                            <!-- Details Button -->
-                            <button
-                                class="flex-1 btn h-10 flex items-center justify-center gap-2 rounded-xl text-gray-700 bg-white bottom-1">
-                                <i class="fa-solid fa-eye"></i> Details
-                            </button>
-
-                            <!-- Add Button -->
-                            <button
-                                class="flex-1 btn bg-[#4f39f6] text-white border-0 h-10 flex items-center justify-center gap-2 rounded-lg">
-                                <i class="fa-solid fa-cart-shopping"></i> Add
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-
+            <!-- Card Row -->
+            <div id="trending-container" class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                <!-- product-->
             </div>
+
         </div>
     </section>
 
 
+    <!-- Modal for Product Details -->
+    <dialog id="product_modal" class="modal">
+        <div class="modal-box max-w-2xl">
+            <div id="modal-content"></div>
+            <div class="modal-action">
+                <form method="dialog">
+                    <button class="btn w-full">Close</button>
+                </form>
+            </div>
+        </div>
+    </dialog> 
+    <!-- modal for product details end-->
 
 
     <!-- footer section -->
